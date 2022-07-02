@@ -48,7 +48,7 @@ jobs:
       - name: Prepare the device-specific code
         run: |
           cd ~/android/lineage
-          source build/envsetup.sh
+          source ~/android/lineage/build/envsetup.sh
           breakfast star2lte
           
       - name: brunch
