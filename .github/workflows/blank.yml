@@ -28,7 +28,7 @@ jobs:
       # Runs a single command using the runners shell
       - name: prepare system
         run: |
-          sudo apt-get install bc bison build-essential ccache curl flex g++-multilib gcc-multilib git gnupg gperf imagemagick lib32ncurses5-dev lib32readline-dev lib32z1-dev liblz4-tool libncurses5 libncurses5-dev libsdl1.2-dev libssl-dev libxml2 libxml2-utils lzop pngcrush rsync schedtool squashfs-tools xsltproc zip zlib1g-dev
+          sudo apt-get install wget bc bison build-essential ccache curl flex g++-multilib gcc-multilib git gnupg gperf imagemagick lib32ncurses5-dev lib32readline-dev lib32z1-dev liblz4-tool libncurses5 libncurses5-dev libsdl1.2-dev libssl-dev libxml2 libxml2-utils lzop pngcrush rsync schedtool squashfs-tools xsltproc zip zlib1g-dev
           mkdir -p ~/bin
           mkdir -p ~/android/lineage
           curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
@@ -37,6 +37,8 @@ jobs:
           export CCACHE_EXEC=/usr/bin/ccache
           ccache -M 50G
           ccache -o compression=true
+          wget https://dl.google.com/android/repository/platform-tools-latest-linux.zip
+          unzip platform-tools_r33.0.2-linux.zip -d ~/bin
 
       - name: init repo and sync
         run: |
