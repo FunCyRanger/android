@@ -43,7 +43,7 @@ jobs:
       - name: init repo and sync
         run: |
           cd ~/android/lineage
-          ~/bin/repo init -u https://github.com/LineageOS/android.git -b lineage-19.1
+          ~/bin/repo init -u https://github.com/FunCyRanger/android.git -b lineage-19.1
           
       - name: Prepare the device-specific code
         run: |
