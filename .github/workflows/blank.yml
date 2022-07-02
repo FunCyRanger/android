@@ -38,7 +38,7 @@ jobs:
           ccache -M 50G
           ccache -o compression=true
           wget https://dl.google.com/android/repository/platform-tools-latest-linux.zip
-          unzip platform-tools_r33.0.2-linux.zip -d ~/bin
+          unzip platform-tools-latest-linux -d ~/bin
 
       - name: init repo and sync
         run: |
