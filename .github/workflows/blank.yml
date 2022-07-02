@@ -41,13 +41,15 @@ jobs:
       - name: init repo and sync
         run: |
           cd ~/android/lineage
-          repo init -u https://github.com/LineageOS/android.git -b lineage-19.1
+          ~/bin/repo init -u https://github.com/LineageOS/android.git -b lineage-19.1
           
       - name: Prepare the device-specific code
         run: |
+          cd ~/android/lineage
           source build/envsetup.sh
           breakfast star2lte
           
       - name: brunch
         run: |
+          cd ~/android/lineage
           brunch star2lte
