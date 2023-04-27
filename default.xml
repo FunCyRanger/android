@@ -1052,4 +1052,37 @@
   <include name="snippets/pixel.xml" />
 
   <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload" />
+  
+  <!-- added to support star2lte Galaxy 9s+ & crownlte from Exynoobs -->
+  <!-- kernel -->
+  <project name="Exynoobs/android_kernel_samsung_exynos9810" path="kernel/samsung/exynos9810" remote="github" revision="lineage-19.1" />
+  <!-- device -->
+  <project name="Exynoobs/android_device_samsung_exynos9810-common" path="device/samsung/exynos9810-common" remote="github" revision="lineage-19.1" />
+  <project name="Exynoobs/android_device_samsung_star2lte" path="device/samsung/star2lte" remote="github" revision="lineage-19.1" />
+  <project name="Exynoobs/android_device_samsung_crownlte" path="device/samsung/crownlte" remote="github" revision="lineage-19.1" />
+  
+  <project name="Exynoobs/proprietary_vendor_samsung_exynos9810-common" path="vendor/samsung/exynos9810-common" remote="github" revision="lineage-19.1" />
+  <project name="Exynoobs/proprietary_vendor_samsung_star2lte" path="vendor/samsung/star2lte" remote="github" revision="lineage-19.1" />
+  <project name="Exynoobs/proprietary_vendor_samsung_crownlte" path="vendor/samsung/crownlte" remote="github" revision="lineage-19.1" />
+  
+  <project name="LineageOS/android_hardware_samsung" path="hardware/samsung" remote="github" revision="lineage-19.1" />
+  <project name="LineageOS/android_device_samsung_slsi_sepolicy" path="device/samsung_slsi/sepolicy" remote="github" revision="lineage-19.1" />
+  
+  <!-- Davinci Mi9T -->
+  <!-- The davinci and xiaomi sm6150-common device trees -->
+  <project name="xiaomi-sm6150/android_device_xiaomi_davinci" path="device/xiaomi/davinci" remote="github" revision="lineage-19.1" />
+  <project name="xiaomi-sm6150/android_device_xiaomi_sm6150-common" path="device/xiaomi/sm6150-common" remote="github" revision="lineage-19.1" />
+
+  <!-- The xiaomi sm6150 kernel -->
+  <project name="ArianK16a/android_kernel_xiaomi_sm6150" path="kernel/xiaomi/sm6150" remote="github" revision="lineage-19.1" />
+
+  <!-- The vendor repository containing proprietary files required for davinci and xiaomi sm6150-common -->
+  <project name="xiaomi-sm6150/android_vendor_xiaomi" path="vendor/xiaomi" remote="github" revision="lineage-19.1" />
+
+  <!-- The xiaomi common repository including some common interfaces and HALs -->
+  <project name="LineageOS/android_hardware_xiaomi" path="hardware/xiaomi/" remote="github" revision="lineage-19.1" />
+
+  <!-- Translations for davinci-specific strings
+  <project name="ArianK16a/android_vendor_extra" path="vendor/translations/" revision="translations" remote="github" revision="lineage-19.1" />
+   -->
 </manifest>
